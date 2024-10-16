@@ -55,21 +55,25 @@ class _MainAppState extends State<MainApp> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Container(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Image.asset("assets/images/$player1.png"),
-                      const Text("Player 1", style: TextStyle(fontSize: 20.0),)
-                    ],
+                  child: Flexible(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Image.asset("assets/images/$player1.png"),
+                        const Text("Player 1", style: TextStyle(fontSize: 20.0),)
+                      ],
+                    ),
                   ),
                 ),
                 Container(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Image.asset("assets/images/$player2.png"),
-                      const Text("Player 2", style: TextStyle(fontSize: 20.0),)
-                    ],
+                  child: Flexible(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Image.asset("assets/images/$player2.png"),
+                        const Text("Player 2", style: TextStyle(fontSize: 20.0),)
+                      ],
+                    ),
                   ),
                 ),
               ],
